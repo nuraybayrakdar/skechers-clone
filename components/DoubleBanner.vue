@@ -113,7 +113,7 @@
   color: #022c57;
   font-weight: 600;
   text-decoration: underline;
-  background-image: url('https://skcfiles.mncdn.com/webfiles/right-arrow.svg');
+  background-image: url("https://skcfiles.mncdn.com/webfiles/right-arrow.svg");
   background-size: 10px;
   background-position: right;
   background-repeat: no-repeat;
@@ -128,6 +128,7 @@
 
 @media only screen and (max-width: 991px) {
   #double-banner.cl-two-col-banner {
+    align-items: center;
     flex-direction: column-reverse;
     margin: 50px 15px;
   }
@@ -163,4 +164,5 @@
     aspect-ratio: 1;
   }
 }
+
 </style>

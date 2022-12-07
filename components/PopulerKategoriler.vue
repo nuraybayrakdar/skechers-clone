@@ -227,5 +227,48 @@ categories-col.col-group {
     color: #022c57;
     white-space: nowrap;
 }
+@media only screen and (max-width: 991px) {
+  .cl-all-categories {
+      margin: 0 15px 50px;
+  }
 
+  .cl-all-categories-header {
+      font-size: 14px;
+      margin-bottom: 14px;
+      font-weight: 600;
+      text-align: left;
+  }
+
+  .cl-all-categories-mobile-buttons,
+  .cl-all-categories-mobile-expand-button {
+      display: flex;
+  }
+
+  .cl-all-categories-cols {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .cl-all-categories-col {
+      border-right: none;
+      padding: 0px;
+      display: none;
+  }
+
+  .cl-all-categories.expanded .cl-all-categories-col {
+      display: block;
+  }
+
+  .cl-all-categories-cols ul {
+      margin: 0px;
+  }
+
+      .cl-all-categories-cols ul li.empty {
+          display: none;
+      }
+
+  .cl-all-categories-cols li:first-child {
+      margin-top: 12px;
+  }
+}
 </style>

@@ -49,9 +49,8 @@
 <script></script>
 
 <style>
-
-.banner{
-    font-family: Mulish, sans-serif;
+.banner {
+  font-family: Mulish, sans-serif;
 }
 
 #band-banner.cl-ad-banner {
@@ -72,8 +71,42 @@
 #band-banner.cl-ad-banner .cl-mobile-img {
   display: none;
 }
+.cl-html-banner-2-button {
+  font-size: 16px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  border: 1px solid #022c57;
+  background-color: #022c57;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+  padding: 0 56px;
+  width: fit-content;
+  margin: auto;
+}
 
 @media only screen and (max-width: 991px) {
+  .cl-html-banner-2-button {
+    margin: 0% 35px;
+    font-size: 12px;
+    font-weight: 400;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    color: #022c57;
+    padding: 0%;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-decoration: underline;
+  }
+
+  .cl-html-banner-2 {
+    text-align: left;
+    margin-bottom: 50px;
+  }
   #band-banner.cl-ad-banner {
     margin: 0%;
   }
@@ -120,23 +153,6 @@
   margin: 30px 15px 10px;
 }
 
-.cl-html-banner-2-button {
-  font-size: 16px;
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 46px;
-  border: 1px solid #022c57;
-  background-color: #022c57;
-  color: #fff;
-  transition: background-color 0.3s, color 0.3s;
-  border-radius: 6px;
-  padding: 0 56px;
-  width: fit-content;
-  margin: auto;
-}
-
 .cl-html-banner-2-button:hover {
   color: #022c57;
   background-color: transparent;
@@ -153,17 +169,17 @@
   }
 
   .cl-html-banner-2-title {
-    font-size: 24px;
-    margin: 0% 15px 16px;
+    font-size: 20px;
+    margin: 0% 40px 16px;
   }
 
   .cl-html-banner-2-subtitle {
     font-size: 12px;
-    margin: 10px 15px 6px;
+    margin: 10px 45px 6px;
   }
 
   .cl-html-banner-2-button {
-    margin: 0% 15px;
+    margin: 0% 40px;
     font-size: 12px;
     font-weight: 400;
     height: 16px;

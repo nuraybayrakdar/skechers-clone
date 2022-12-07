@@ -43,6 +43,9 @@
       "assets": [
         "assets"
       ],
+      "assets/*": [
+        "assets/*"
+      ],
       "public": [
         "public"
       ],
@@ -66,9 +69,6 @@
       ],
       "#build": [
         ".nuxt"
-      ],
-      "#build/*": [
-        ".nuxt/*"
       ],
       "#components": [
         ".nuxt/components"
