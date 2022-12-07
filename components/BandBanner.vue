@@ -10,8 +10,8 @@
     >
       <img
         class="cl-banner-img"
-        src="https://skcfiles.mncdn.com/webfiles/banners/2022/kasim/a3-kids-desktop.gif"
-        data-src="https://skcfiles.mncdn.com/webfiles/banners/2022/kasim/a3-kids-desktop.gif"
+        src="../assets/a3-kids-desktop.gif"
+        data-src="../assets/a3-kids-desktop.gif"
       />
     </a>
     <div
@@ -32,8 +32,8 @@
           style="width: 310px"
         >
           <img
-            src="https://skcfiles.mncdn.com/livephotos/8/314785N%20LVMT/683-09.gif?v=1669795563"
-            data-src="https://skcfiles.mncdn.com/livephotos/8/314785N%20LVMT/683-09.gif?v=1669795563"
+            src="../assets/683-09.gif"
+            data-src="../assets/683-09.gif"
             data-resize="600/600"
             class="cl-product-img"
           />
