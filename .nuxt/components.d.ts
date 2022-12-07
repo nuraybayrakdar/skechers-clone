@@ -2,8 +2,10 @@
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     'BandBanner': typeof import("../components/BandBanner.vue")['default']
+    'DoubleBanner': typeof import("../components/DoubleBanner.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Header': typeof import("../components/Header.vue")['default']
+    'PopulerKategoriler': typeof import("../components/PopulerKategoriler.vue")['default']
     'QrAndSlider': typeof import("../components/QrAndSlider.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -24,8 +26,10 @@ declare module '@vue/runtime-core' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyBandBanner': typeof import("../components/BandBanner.vue")['default']
+    'LazyDoubleBanner': typeof import("../components/DoubleBanner.vue")['default']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
     'LazyHeader': typeof import("../components/Header.vue")['default']
+    'LazyPopulerKategoriler': typeof import("../components/PopulerKategoriler.vue")['default']
     'LazyQrAndSlider': typeof import("../components/QrAndSlider.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -49,8 +53,10 @@ declare module '@vue/runtime-core' {
 }
 
 export const BandBanner: typeof import("../components/BandBanner.vue")['default']
+export const DoubleBanner: typeof import("../components/DoubleBanner.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
+export const PopulerKategoriler: typeof import("../components/PopulerKategoriler.vue")['default']
 export const QrAndSlider: typeof import("../components/QrAndSlider.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -71,8 +77,10 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyBandBanner: typeof import("../components/BandBanner.vue")['default']
+export const LazyDoubleBanner: typeof import("../components/DoubleBanner.vue")['default']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
 export const LazyHeader: typeof import("../components/Header.vue")['default']
+export const LazyPopulerKategoriler: typeof import("../components/PopulerKategoriler.vue")['default']
 export const LazyQrAndSlider: typeof import("../components/QrAndSlider.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
