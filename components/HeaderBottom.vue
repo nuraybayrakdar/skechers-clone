@@ -2821,6 +2821,7 @@ body.search-active {
   order: 1;
 }
 @media screen and (min-width: 992px) {
+  
   #menu,
   #menu .menu-sections,
   #menu .sub-categories {
@@ -2874,6 +2875,7 @@ body.search-active {
     text-align: center;
   }
   #menu .menu-main-section > ul > li > a {
+    font-family: Mulish,sans-serif;
     background-image: none;
     border-right: 1px solid #eee;
     margin: 16px 0;
@@ -3087,6 +3089,15 @@ body.search-active {
   }
   .sub-category-body .sub-category-list.active {
     margin-left: 8px;
+  }
+  #menu .menu-main-section ul li a {
+    font-family: Mulish, sans-serif;
+    background-image: none;
+    border-right: 1px solid #eee;
+    margin: 16px 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 26px;
   }
 }
 </style>

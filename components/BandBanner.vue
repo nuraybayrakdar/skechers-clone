@@ -54,11 +54,12 @@
 
 <style>
 .cl-banner-with-product-slider {
+
   text-decoration: none;
   font-family: Mulish, sans-serif;
   display: flex;
   /*align-items: center;*/
-  padding: 32px 80px;
+  padding: 15px 15px;
   background-color: #fafafa;
   margin-bottom: 80px;
 }
@@ -105,8 +106,7 @@
 }
 
 .cl-banner-with-product-slider .cl-one-product-slider .cl-product-img {
-  width: 100%;
-  padding: 0 30px;
+  width: 120%;
   margin-bottom: 16px;
 }
 
