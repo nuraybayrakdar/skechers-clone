@@ -2,6 +2,7 @@
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     'BandBanner': typeof import("../components/BandBanner.vue")['default']
+    'DescriptionText': typeof import("../components/DescriptionText.vue")['default']
     'DiscoverBanner': typeof import("../components/DiscoverBanner.vue")['default']
     'DoubleBanner': typeof import("../components/DoubleBanner.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
@@ -30,6 +31,7 @@ declare module '@vue/runtime-core' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyBandBanner': typeof import("../components/BandBanner.vue")['default']
+    'LazyDescriptionText': typeof import("../components/DescriptionText.vue")['default']
     'LazyDiscoverBanner': typeof import("../components/DiscoverBanner.vue")['default']
     'LazyDoubleBanner': typeof import("../components/DoubleBanner.vue")['default']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
@@ -61,6 +63,7 @@ declare module '@vue/runtime-core' {
 }
 
 export const BandBanner: typeof import("../components/BandBanner.vue")['default']
+export const DescriptionText: typeof import("../components/DescriptionText.vue")['default']
 export const DiscoverBanner: typeof import("../components/DiscoverBanner.vue")['default']
 export const DoubleBanner: typeof import("../components/DoubleBanner.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
@@ -89,6 +92,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyBandBanner: typeof import("../components/BandBanner.vue")['default']
+export const LazyDescriptionText: typeof import("../components/DescriptionText.vue")['default']
 export const LazyDiscoverBanner: typeof import("../components/DiscoverBanner.vue")['default']
 export const LazyDoubleBanner: typeof import("../components/DoubleBanner.vue")['default']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
