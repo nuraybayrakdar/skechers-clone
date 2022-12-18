@@ -11,6 +11,8 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "firebase": "^9.15.0",
+    "vue": "^3.2.45",
+    "vuefire": "^3.0.0-beta.6"
   }
 }
