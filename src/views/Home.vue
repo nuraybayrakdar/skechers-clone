@@ -5,9 +5,6 @@ import DoubleBanner from '../components/DoubleBanner.vue'
 import DiscoverBanner from '../components/DiscoverBanner.vue'
 import GenderBanner from '../components/GenderBanner.vue'
 
-
-
-
 </script>
 <template>
     <QrAndSlider></QrAndSlider>

@@ -912,7 +912,7 @@ body .mdd-menu .nav-brand img {
   width: 100%;
   min-width: 180px;
   aspect-ratio: 6.1;
-  margin-top: -10px;
+  margin-top: 20px;
 }
 body .mdd-menu .nav-brand:focus,
 body .mdd-menu .nav-brand:hover {
