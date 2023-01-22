@@ -118,8 +118,8 @@
       </div>
     </div>
   </template>
-  <script>
-  export default { name: 'Login' }
+  <script setup lang="ts">
+  
   </script>
   <style>
   .login-page,
