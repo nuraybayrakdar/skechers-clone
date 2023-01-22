@@ -1,13 +1,21 @@
+
 <template>
   <div>
     <Header></Header>
-    <QrAndSlider></QrAndSlider>
-
-    <DoubleBanner></DoubleBanner>
-    <BandBanner></BandBanner>
-    <DiscoverBanner></DiscoverBanner>
-    <GenderBanner></GenderBanner>
-    <PopulerKategoriler></PopulerKategoriler>
-    <Footer></Footer>
   </div>
+    
+    
+    <div id="app">
+      <div id="nav">
+        <router-link to="{ name: '/' }"></router-link>
+         
+      </div>
+      <router-view />
+    </div>
+
 </template>
+
+<style>
+
+
+</style>
