@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 const props = defineProps({
   image: { type: String, required: true },
@@ -9,7 +8,7 @@ const props = defineProps({
 });
 
 props.name;
-props.image // string
+props.image; // string
 props.desc;
 props.color;
 props.price;
@@ -22,18 +21,17 @@ props.price;
           <div class="img-container">
             <img :src="image" alt="watch" />
           </div>
-          
         </div>
         <div class="product-div-right">
-          <span class="product-name">{{name}}</span>
-          <span class="product-price">{{price}}</span>
+          <span class="product-name">{{ name }}</span>
+          <span class="product-price">{{ price }}</span>
           <div class="product-rating">
             <span><i class="fas fa-star"></i></span>
             <span><i class="fas fa-star"></i></span>
             <span><i class="fas fa-star"></i></span>
             <span><i class="fas fa-star"></i></span>
             <span><i class="fas fa-star-half-alt"></i></span>
-            {{color}}
+            {{ color }}
           </div>
           <p class="product-description">
             {{ desc }}
