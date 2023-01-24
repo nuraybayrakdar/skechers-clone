@@ -87,8 +87,10 @@ import HeaderBottom from './HeaderBottom.vue'
                       <li class="nav-item wishlist-container d-lg-block">
                         <a class="nav-link" href="/wishlist">
                           <span class="wishlist-label hl-label">
-
-                            <span class="sk-wish-title">Favorilerim</span>
+                            <RouterLink to="/favorites">
+                                <span class="sk-wish-title">Favorilerim</span>
+                            </RouterLink>
+                          
                           </span>
                         </a>
                       </li>

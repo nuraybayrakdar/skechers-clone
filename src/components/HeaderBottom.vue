@@ -9,7 +9,7 @@
           <li>
             <RouterLink
               class="main-category"
-              to="/productDetail"
+              to="/products"
               data-id="kadin"
               >KADIN</RouterLink
             >
@@ -23,41 +23,46 @@
             >
           </li>
           <li>
-            <a class="main-category" href="/cocuk-c-3" data-id="cocuk">ÇOCUK</a>
+            <RouterLink
+              class="main-category"
+              to="/products"
+              data-id="kadin"
+              >ÇOCUK</RouterLink
+            >
 
             <div class="sub-categories" data-target="cocuk"></div>
           </li>
           <li>
-            <a
+            <RouterLink
+            class="main-category"
+            to="/products"
+            data-id="kadin"
+            >KOLEKSİYONLAR</RouterLink
+          >
+          </li>
+          <li>
+            <RouterLink
+            class="main-category"
+            to="/products"
+            data-id="kadin"
+            >SPOR GİYİM</RouterLink
+          >
+          </li>
+          <li>
+            <RouterLink
               class="main-category"
-              href="/koleksiyonlar-c-4"
-              data-id="koleksiyonlar"
-              >KOLEKSİYONLAR</a
+              to="/products"
+              data-id="kadin"
+              >HERKES İÇİN SKECHERS</RouterLink
             >
           </li>
           <li>
-            <a
-              class="main-category"
-              href="/spor-giyim-c-6100"
-              data-id="spor-giyim"
-              >SPOR GİYİM</a
-            >
-          </li>
-          <li>
-            <a
-              class="main-category"
-              href="/herkes-icin-skechers-c-8072"
-              data-id="herhes"
-              >HERKES İÇİN SKECHERS
-            </a>
-          </li>
-          <li>
-            <a
-              class="color1 main-category"
-              href="/sezon-indirimi-c-7001"
-              data-id="indirim"
-              >İNDİRİM</a
-            >
+            <RouterLink
+            class="main-category"
+            to="/products"
+            data-id="kadin"
+            >İNDİRİM</RouterLink
+          >
           </li>
         </ul>
       </div>
