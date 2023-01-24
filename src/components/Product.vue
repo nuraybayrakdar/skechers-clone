@@ -1,29 +1,42 @@
+
+<script setup lang="ts">
+const props = defineProps({
+  image: { type: String, required: true },
+  name: { type: String, required: true },
+  desc: { type: String, required: true },
+  color: { type: String, required: true },
+  price: { type: String, required: true },
+});
+
+props.name;
+props.image // string
+props.desc;
+props.color;
+props.price;
+</script>
 <template>
   <div class="main-wrapper">
     <div class="container">
       <div class="product-div">
         <div class="product-div-left">
           <div class="img-container">
-            <img src="../assets/w1.png" alt="watch" />
+            <img :src="image" alt="watch" />
           </div>
           
         </div>
         <div class="product-div-right">
-          <span class="product-name">(New) Goodyear Sneaker</span>
-          <span class="product-price"> 1550.25 TL</span>
+          <span class="product-name">{{name}}</span>
+          <span class="product-price">{{price}}</span>
           <div class="product-rating">
             <span><i class="fas fa-star"></i></span>
             <span><i class="fas fa-star"></i></span>
             <span><i class="fas fa-star"></i></span>
             <span><i class="fas fa-star"></i></span>
             <span><i class="fas fa-star-half-alt"></i></span>
-            <span>(350 ratings)</span>
+            {{color}}
           </div>
           <p class="product-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-            animi ad minima veritatis dolore. Architecto facere dignissimos
-            voluptate fugit ratione molestias quis quidem exercitationem
-            voluptas.
+            {{ desc }}
           </p>
           <div class="hover-container">
             <div><img src="../assets/w1.png" /></div>
@@ -33,10 +46,10 @@
           </div>
           <div class="btn-groups">
             <button type="button" class="add-cart-btn">
-              <i class="fas fa-shopping-cart"></i>add to cart
+              <i class="fas fa-shopping-cart"></i>Sepete Ekle
             </button>
             <button type="button" class="buy-now-btn">
-              <i class="fas fa-wallet"></i>buy now
+              <i class="fas fa-wallet"></i>Favorİle
             </button>
           </div>
         </div>
@@ -188,6 +201,3 @@ img {
   }
 }
 </style>
-<script lang="ts">
-
-</script>

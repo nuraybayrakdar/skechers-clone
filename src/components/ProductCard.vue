@@ -7,7 +7,8 @@ const props = defineProps({
   price: { type: String, required: true },
 });
 
-props.name; // string
+props.name;
+props.image // string
 props.desc;
 props.color;
 props.price;
