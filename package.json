@@ -9,6 +9,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "firebase": "^9.16.0",
     "nuxt": "^3.0.0",
     "pinia": "^2.0.29",
     "vue": "^3.2.45",

@@ -1,25 +1,26 @@
 <template>
   <div class="login-page">
-    <form class="login-form">
-      <input type="text" placeholder="E-posta" />
-      <input type="password" placeholder="Şifre" />
-      <button @click="register">Giriş Yap</button>
-      <p class="message">Üye değil misin? <RouterLink to="/register">Hesap oluştur</RouterLink></p>
-    </form>
+    <div class="form">
+      <form class="register-form">
+        <input type="password" v-model="password" placeholder="password" />
+        <input type="text" v-model="email" placeholder="email address" />
+        <button @click="register">Üye Ol</button>
+        <p class="message">Zaten üye misin? <RouterLink to="/login">Giriş Yap</RouterLink></p>
+      </form>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from 'vue-router';
-
 const email = ref("");
 const password = ref("");
 const router = useRouter();
 const register = () => {
-  signInWithEmailAndPassword(getAuth(), email.value, password.value)
+  createUserWithEmailAndPassword(getAuth(), email.value, password.value)
     .then((data) => {
-      console.log("Girş yaptınız!");
+      console.log("Üye oldunuz!");
       router.push("/home");
     })
 
@@ -29,7 +30,6 @@ const register = () => {
     });
 };
 </script>
-
 <style>
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
