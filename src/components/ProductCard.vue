@@ -1,21 +1,35 @@
+<script setup lang="ts">
+const props = defineProps({
+  image: { type: String, required: true },
+  name: { type: String, required: true },
+  desc: { type: String, required: true },
+  color: { type: String, required: true },
+  price: { type: String, required: true },
+});
+
+props.name; // string
+props.desc;
+props.color;
+props.price;
+</script>
 <template>
-  <div class="container2">
+  
     <div class="card">
       <div class="card-header">
-        <img src="../assets/sh1.png" alt="rover" />
+        <img :src="image" />
       </div>
       <div class="card-body">
         <RouterLink to="/productDetail">
-          <h4>Uno - Crossing Hearts 155227 WMLT</h4>
+          <h4>{{ name }}</h4>
         </RouterLink>
         <p>
-          Beyaz Sneakers<br />
-          Renk: Beyaz
+          {{ desc }} <br />
+          Renk: {{ color }}
         </p>
 
         <div class="price">
           <div class="price-info">
-            <h5>1429.99 TL</h5>
+            <h5>{{ price }}</h5>
             <small>2h ago</small>
           </div>
           <div class="btn-groups">
@@ -29,83 +43,9 @@
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-header">
-        <img src="../assets/sh2.png" alt="ballons" />
-      </div>
-      <div class="card-body">
-        <RouterLink to="/productDetail">
-          <h4>Arch Fit 149729 CHAR</h4>
-        </RouterLink>
-
-        <p>
-          Gri Spor Ayakkabı<br />
-          Renk: Gri
-        </p>
-        <div class="price">
-          <div class="price-info">
-            <h5>2360 TL</h5>
-            <small>Yesterday</small>
-          </div>
-          <div class="btn-groups">
-            <button type="button" class="add-cart-btn">
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-            <button type="button" class="buy-now-btn">
-              <i class="fas fa-wallet"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <img src="../assets/sh3.png" alt="city" />
-      </div>
-      <div class="card-body">
-        <RouterLink to="/productDetail">
-          <h4>Stamina-Classy Trail 13455 BKW</h4>
-        </RouterLink>
-
-        <p>
-          Kadın Siyah Sneakers <br />
-          Renk: Siyah
-        </p>
-        <div class="price">
-          <div class="price-info">
-            <h5>1546 TL</h5>
-            <small>1w ago</small>
-          </div>
-          <div class="btn-groups">
-            <button type="button" class="add-cart-btn">
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-            <button type="button" class="buy-now-btn">
-              <i class="fas fa-wallet"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <style>
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background-color: #f7f8fc;
-  font-family: "Roboto", sans-serif;
-  color: #10182f;
-}
-.container2 {
-  display: flex;
-  width: 1040px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
 .card {
   margin: 10px;
   background-color: #fff;
@@ -174,4 +114,3 @@ body {
   color: #545d7a;
 }
 </style>
-<script setup lang="ts"></script>
