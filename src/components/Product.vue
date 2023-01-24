@@ -147,13 +147,13 @@ img {
   margin-right: 8px;
 }
 .add-cart-btn {
-  background-color: #ff9f00;
-  border: 2px solid #ff9f00;
+  background-color: #022c57;
+  border: 2px solid #022c57;
   margin-right: 8px;
 }
 .add-cart-btn:hover {
   background-color: #fff;
-  color: #ff9f00;
+  color: #022c57;
 }
 .buy-now-btn {
   background-color: #000;

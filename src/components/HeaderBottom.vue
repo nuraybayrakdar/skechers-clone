@@ -15,7 +15,12 @@
             >
           </li>
           <li>
-            <a class="main-category" href="/erkek-c-2" data-id="erkek">ERKEK</a>
+            <RouterLink
+              class="main-category"
+              to="/products"
+              data-id="kadin"
+              >ERKEK</RouterLink
+            >
           </li>
           <li>
             <a class="main-category" href="/cocuk-c-3" data-id="cocuk">ÇOCUK</a>

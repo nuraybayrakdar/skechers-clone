@@ -76,7 +76,6 @@ import HeaderBottom from './HeaderBottom.vue'
 
                 <div class="container-fluid sk-header-cart-container">
                   <RouterLink   class="sk-user-account" to="/login">
-                    <span class="mdi mdi-account-outline"></span>
 
                     <span class="sk-acc-title" id="cl-account-button"
                       >Giriş Yap <br />
@@ -88,7 +87,7 @@ import HeaderBottom from './HeaderBottom.vue'
                       <li class="nav-item wishlist-container d-lg-block">
                         <a class="nav-link" href="/wishlist">
                           <span class="wishlist-label hl-label">
-                            <span class="mdi mdi-heart-outline"></span>
+
                             <span class="sk-wish-title">Favorilerim</span>
                           </span>
                         </a>
@@ -97,7 +96,6 @@ import HeaderBottom from './HeaderBottom.vue'
                         <div class="btn-group dropdown">
                           <a class="nav-link" href="/cart">
                             <span class="cart-label hl-label">
-                              <span class="mdi mdi-cart-outline"></span>
                               <span class="sk-cart-title">Sepetim</span>
                             </span>
                             <span class="cart-qty">0</span>
