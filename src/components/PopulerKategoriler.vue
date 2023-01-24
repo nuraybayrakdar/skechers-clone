@@ -142,132 +142,131 @@
   </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style>
 .cl-all-categories {
- font-family: Mulish, sans-serif;
+  font-family: Mulish, sans-serif;
   margin: 80px 50px;
 }
 
 .cl-all-categories-header {
-    color:#022c57;
-    font-size: 24px;
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 24px;
+  color: #022c57;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .cl-all-categories-mobile-buttons {
-    display: none;
+  display: none;
 }
 
 .cl-all-categories-mobile-button {
-    background-color: #ededed;
-    border-radius: 10px;
-    height: 60px;
-    display: inline-block;
-    margin-right: 8px;
-    width: calc(33.33% - 6px);
-    position: relative;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
+  background-color: #ededed;
+  border-radius: 10px;
+  height: 60px;
+  display: inline-block;
+  margin-right: 8px;
+  width: calc(33.33% - 6px);
+  position: relative;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .cl-all-categories-mobile-button-text {
-    line-height: 60px;
-    position: absolute;
-    right: 6px;
-    font-size: 9px;
-    color: #000;
-    opacity: .9;
-    font-weight: 700;
+  line-height: 60px;
+  position: absolute;
+  right: 6px;
+  font-size: 9px;
+  color: #000;
+  opacity: 0.9;
+  font-weight: 700;
 }
 
 categories-col.col-group {
-    border-right: none;
+  border-right: none;
 }
 
 .cl-all-categories-col {
-    border-right: 1px solid #EDEDED;
-    padding-left: 20px;
-    padding-right: 20px;
+  border-right: 1px solid #ededed;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .cl-all-categories-cols {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cl-all-categories-mobile-expand-button {
-    border-radius: 6px;
-    height: 40px;
-    border: 1px solid #022c57;
-    font-size: 12px;
-    font-weight: 600;
-    align-items: center;
-    justify-content: center;
-    color: #022c57;
-    margin-top: 20px;
-    display: none;
+  border-radius: 6px;
+  height: 40px;
+  border: 1px solid #022c57;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  color: #022c57;
+  margin-top: 20px;
+  display: none;
 }
 
 .cl-all-categories-cols li {
-    font-weight: 800;
-    margin-bottom: 8px;
-    height: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  height: 20px;
 }
 
 .cl-all-categories-cols li a {
-    font-size: 12px;
-    font-weight: 400;
-    color: #022c57;
-    white-space: nowrap;
+  font-size: 12px;
+  font-weight: 400;
+  color: #022c57;
+  white-space: nowrap;
 }
 @media only screen and (max-width: 991px) {
   .cl-all-categories {
-      margin: 0 15px 50px;
+    margin: 0 15px 50px;
   }
 
   .cl-all-categories-header {
-      font-size: 14px;
-      margin-bottom: 14px;
-      font-weight: 600;
-      text-align: left;
+    font-size: 14px;
+    margin-bottom: 14px;
+    font-weight: 600;
+    text-align: left;
   }
 
   .cl-all-categories-mobile-buttons,
   .cl-all-categories-mobile-expand-button {
-      display: flex;
+    display: flex;
   }
 
   .cl-all-categories-cols {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .cl-all-categories-col {
-      border-right: none;
-      padding: 0px;
-      display: none;
+    border-right: none;
+    padding: 0px;
+    display: none;
   }
 
   .cl-all-categories.expanded .cl-all-categories-col {
-      display: block;
+    display: block;
   }
 
   .cl-all-categories-cols ul {
-      margin: 0px;
+    margin: 0px;
   }
 
-      .cl-all-categories-cols ul li.empty {
-          display: none;
-      }
+  .cl-all-categories-cols ul li.empty {
+    display: none;
+  }
 
   .cl-all-categories-cols li:first-child {
-      margin-top: 12px;
+    margin-top: 12px;
   }
 }
 </style>
