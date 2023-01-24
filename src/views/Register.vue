@@ -2,10 +2,12 @@
   <div class="login-page">
     <div class="form">
       <form class="register-form">
-        <input type="password" v-model="password" placeholder="password" />
-        <input type="text" v-model="email" placeholder="email address" />
+        <input type="text" v-model="email" placeholder="email" />
+        <input type="password" v-model="password" placeholder="şifre" />
         <button @click="register">Üye Ol</button>
-        <p class="message">Zaten üye misin? <RouterLink to="/login">Giriş Yap</RouterLink></p>
+        <p class="message">
+          Zaten üye misin? <RouterLink to="/login">Giriş Yap</RouterLink>
+        </p>
       </form>
     </div>
   </div>
@@ -13,7 +15,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { useRouter } from 'vue-router';
+import { useRouter } from "vue-router";
 const email = ref("");
 const password = ref("");
 const router = useRouter();
@@ -25,19 +27,14 @@ const register = () => {
     })
 
     .catch((error) => {
-        console.log(error.code);
-        alert(error.message)
+      console.log(error.code);
+      alert(error.message);
     });
 };
 </script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-.login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
-}
 .form {
   position: relative;
   z-index: 1;
@@ -86,9 +83,6 @@ const register = () => {
 .form .message a {
   color: #022c57;
   text-decoration: none;
-}
-.form .register-form {
-  display: none;
 }
 .container {
   position: relative;

@@ -1,17 +1,21 @@
 <template>
   <div class="login-page">
-    <form class="login-form">
-      <input type="text" placeholder="E-posta" />
-      <input type="password" placeholder="Şifre" />
-      <button @click="register">Giriş Yap</button>
-      <p class="message">Üye değil misin? <RouterLink to="/register">Hesap oluştur</RouterLink></p>
-    </form>
+    <div class="form">
+      <form class="login-form">
+        <input type="text" placeholder="E-posta" />
+        <input type="password" placeholder="Şifre" />
+        <button @click="register">Giriş Yap</button>
+        <p class="message">
+          Üye değil misin? <RouterLink to="/register">Hesap oluştur</RouterLink>
+        </p>
+      </form>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { useRouter } from 'vue-router';
+import { useRouter } from "vue-router";
 
 const email = ref("");
 const password = ref("");
@@ -24,8 +28,8 @@ const register = () => {
     })
 
     .catch((error) => {
-        console.log(error.code);
-        alert(error.message)
+      console.log(error.code);
+      alert(error.message);
     });
 };
 </script>
@@ -86,9 +90,6 @@ const register = () => {
 .form .message a {
   color: #022c57;
   text-decoration: none;
-}
-.form .register-form {
-  display: none;
 }
 .container {
   position: relative;
