@@ -47,7 +47,7 @@ export default {
     color: { type: String, required: true },
     price: { type: String, required: true },
   },
-/*
+
   setup() {
     const posts = ref([]);
     const API_URL = "http://localhost:5000/posts";
@@ -62,7 +62,7 @@ export default {
       console.log(posts.value[0]);
     }
   },
-*/
+  /*
   name: "ProductCard",
   data() {
     return {
@@ -80,7 +80,7 @@ export default {
   mounted() {
     this.getData;
   },
- 
+  */
 };
 </script>
 <style>
