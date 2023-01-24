@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "nuxt": "^3.0.0",
-    "pinia": "^2.0.28",
+    "pinia": "^2.0.29",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@nuxtjs/pwa": "^3.3.5",
