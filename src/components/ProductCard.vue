@@ -1,51 +1,80 @@
-<script setup lang="ts">
-const props = defineProps({
-  image: { type: String, required: true },
-  name: { type: String, required: true },
-  desc: { type: String, required: true },
-  color: { type: String, required: true },
-  price: { type: String, required: true },
-});
-
-props.name;
-props.image // string
-props.desc;
-props.color;
-props.price;
-</script>
 <template>
-  
-    <div class="card">
-      <div class="card-header">
-        <img :src="image" />
-      </div>
-      <div class="card-body">
-        <RouterLink to="/productDetail">
-          <h4>{{ name }}</h4>
-        </RouterLink>
-        <p>
-          {{ desc }} <br />
-          Renk: {{ color }}
-        </p>
+  <div class="card" v-for="post in posts" :key="post._id">
+    <div class="card-header">
+      <!-- <img :src="post.title" /> -->
+    </div>
+    <div class="card-body">
+      <RouterLink to="/productDetail">
+        <h4>{{ post.title }}</h4>
+      </RouterLink>
+      <p>
+        {{ desc }} <br />
+        Renk: {{ color }}
+      </p>
 
-        <div class="price">
-          <div class="price-info">
-            <h5>{{ price }}</h5>
-            <small>2h ago</small>
-          </div>
-          <div class="btn-groups">
-            <button type="button" class="add-cart-btn">
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-            <button type="button" class="buy-now-btn">
-              <i class="fas fa-wallet"></i>
-            </button>
-          </div>
+      <div class="price">
+        <div class="price-info">
+          <h5>{{ post.content }}</h5>
+          <small>2h ago</small>
+        </div>
+        <div class="btn-groups">
+          <button type="button" class="add-cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <button type="button" class="buy-now-btn">
+            <i class="fas fa-wallet"></i>
+          </button>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
+<script lang="ts">
+import { onMounted } from "vue";
+import { computed } from "vue";
+export default {
+  props: {
+    image: { type: String, required: true },
+    name: { type: String, required: true },
+    desc: { type: String, required: true },
+    color: { type: String, required: true },
+    price: { type: String, required: true },
+  },
+  /*
+  setup() {
+    const posts = ref([]);
+    const API_URL = "http:localhost:5000/posts";
+    onMounted(() => {
+      getPosts();
+    });
+    async function getPosts() {
+      const response = await fetch(API_URL);
+      const json = await response.json();
+      posts.value = json;
+    }
+  },
+  */
+
+  name: "ProductCard",
+  data() {
+    return {
+      posts: null,
+    };
+  },
+  computed: {
+    async getData() {
+      const response = await fetch("http://localhost:5000/posts");
+      const finalResponse = await response.json();
+      this.posts = finalResponse;
+      console.log(this.posts);
+    },
+  },
+  mounted() {
+    this.getData;
+  },
+};
+</script>
 <style>
 .card {
   margin: 10px;
