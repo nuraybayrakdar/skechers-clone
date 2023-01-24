@@ -1,7 +1,7 @@
 <template>
   <div class="card" v-for="post in posts" :key="post._id">
     <div class="card-header">
-      <!-- <img :src="post.title" /> -->
+      <img v-bind:src="post.image" />
     </div>
     <div class="card-body">
       <RouterLink to="/productDetail">

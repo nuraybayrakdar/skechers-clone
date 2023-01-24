@@ -9,7 +9,15 @@ const postSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  creator: {
+  price: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  color: {
     type: String,
     required: true,
   },
