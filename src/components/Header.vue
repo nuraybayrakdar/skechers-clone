@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HeaderBottom from './HeaderBottom.vue'
+import { RouterLink, RouterView } from "vue-router";
+import HeaderBottom from "./HeaderBottom.vue";
 </script>
 <template>
   <div>
@@ -75,12 +75,11 @@ import HeaderBottom from './HeaderBottom.vue'
                 <!-- Header buttons Start -->
 
                 <div class="container-fluid sk-header-cart-container">
-                  <RouterLink   class="sk-user-account" to="/login">
-
+                  <RouterLink class="sk-user-account" to="/ProfilePage">
                     <span class="sk-acc-title" id="cl-account-button"
                       >Giriş Yap <br />
-                      <span>veya üye ol</span> </span
-                    >
+                      <span>veya üye ol</span>
+                    </span>
                   </RouterLink>
                   <div class="d-inline-flex align-items-center sk-user-setting">
                     <ul class="shopping-links">
@@ -88,9 +87,8 @@ import HeaderBottom from './HeaderBottom.vue'
                         <a class="nav-link" href="/wishlist">
                           <span class="wishlist-label hl-label">
                             <RouterLink to="/favorites">
-                                <span class="sk-wish-title">Favorilerim</span>
+                              <span class="sk-wish-title">Favorilerim</span>
                             </RouterLink>
-                          
                           </span>
                         </a>
                       </li>
