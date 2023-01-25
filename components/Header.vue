@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script >
 import { RouterLink, RouterView } from "vue-router";
 import HeaderBottom from "./HeaderBottom.vue";
 </script>
@@ -75,7 +75,7 @@ import HeaderBottom from "./HeaderBottom.vue";
                 <!-- Header buttons Start -->
 
                 <div class="container-fluid sk-header-cart-container">
-                  <RouterLink class="sk-user-account" to="/ProfilePage">
+                  <RouterLink class="sk-user-account" to="/login">
                     <span class="sk-acc-title" id="cl-account-button"
                       >Giriş Yap <br />
                       <span>veya üye ol</span>

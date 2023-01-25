@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script>
 const props = defineProps({
   image: { type: String, required: true },
   name: { type: String, required: true },

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script>
 import BandBanner from "../components/BandBanner.vue";
 import QrAndSlider from "../components/QrAndSlider.vue";
 import DoubleBanner from "../components/DoubleBanner.vue";

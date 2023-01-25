@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script>
 import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/Header.vue'
 import PopulerKategoriler from './components/PopulerKategoriler.vue'
@@ -14,8 +14,5 @@ import Footer from './components/Footer.vue'
 </template>
 
 <style>
- RouteView {
-   width: 100%;
- }
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container2">
     <ProductCard
       v-bind:image="'src/assets/sh1.png'"
       name=" Uno - Crossing Hearts 155227 WMLT"
@@ -9,7 +9,7 @@
     ></ProductCard>
   </div>
 </template>
-<script setup lang="ts">
+<script>
 import ProductCard from "@/components/ProductCard.vue";
 </script>
 

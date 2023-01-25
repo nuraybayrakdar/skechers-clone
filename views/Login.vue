@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup>
+<script >
 import LoginCard from "../components/LoginCard.vue";
 import Message from "../components/Message.vue";
 import { useStore } from "vuex";

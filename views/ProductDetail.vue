@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script>
 import Product from '../components/Product.vue'
 
 </script>
