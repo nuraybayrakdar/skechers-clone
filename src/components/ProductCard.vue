@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="card"
-    v-for="post in posts"
-    :key="post._id"
-    @click="$router.push(`post/${post._id}`)"
-  >
+  <div class="card" v-for="post in posts" :key="post._id">
     <div class="card-header">
       <img v-bind:src="post.image" />
     </div>
@@ -47,7 +42,7 @@ export default {
     color: { type: String, required: true },
     price: { type: String, required: true },
   },
-/*
+  /*
   setup() {
     const posts = ref([]);
     const API_URL = "http://localhost:5000/posts";
@@ -80,7 +75,6 @@ export default {
   mounted() {
     this.getData;
   },
- 
 };
 </script>
 <style>
