@@ -3,7 +3,7 @@
     <div class="count">{{ storeCounter.count }}</div>
     <div class="buttons">
       <button @click="storeCounter.increment">+</button>
-      <button @click="decreaseCount">-</button>
+      <button @click="storeCounter.increment">-</button>
     </div>
     <!--
     <ProductCard
@@ -14,6 +14,33 @@
       price="1429.99 TL"
     ></ProductCard>
     -->
+    <div class="card" v-if="storeCounter.bool">
+      <div class="card-header">
+        <img v-bind:src="'src/assets/sh1.png'" />
+      </div>
+      <div class="card-body">
+        <RouterLink to="/productDetail">
+          <h4>Uno - Crossing Hearts 155227 WMLT</h4>
+        </RouterLink>
+        <p>
+          Beyaz Sneakers <br />
+          Renk: Beyaz
+        </p>
+
+        <div class="price">
+          <div class="price-info">
+            <h5>1429.99 TL</h5>
+            <small>2h ago</small>
+          </div>
+          <div class="btn-groups">
+            <div class="btn-groups">
+              <button type="button" class="add-cart-btn">🛒</button>
+              <button type="button" class="buy-now-btn">🤍</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="container2">
     <div class="count">{{ storeCounter.count }}</div>
@@ -25,20 +52,6 @@ import { ref } from "vue";
 import { useCounterStore } from "@/stores/counter";
 
 const storeCounter = useCounterStore();
-
-const image = ref("'src/assets/sh1.png'");
-const name = ref(" Uno - Crossing Hearts 155227 WMLT");
-const desc = ref(" Beyaz Sneakers");
-const color = ref("Beyaz");
-const price = ref("1429.99 TL");
-const count = ref(0);
-
-const increaseCount = () => {
-  count.value++;
-};
-const decreaseCount = () => {
-  count.value--;
-};
 </script>
 
 <style>
