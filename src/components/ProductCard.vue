@@ -20,7 +20,13 @@
         <div class="btn-groups">
           <div class="btn-groups">
             <button type="button" class="add-cart-btn">🛒</button>
-            <button type="button" class="buy-now-btn">🤍</button>
+            <button
+              type="button"
+              class="buy-now-btn"
+              @click="storeCounter.increment"
+            >
+              🤍
+            </button>
           </div>
         </div>
       </div>
@@ -34,7 +40,9 @@ import { computed } from "vue";
 import { ref } from "vue";
 import { isProxy, toRaw } from "vue";
 import { RouterLink } from "vue-router";
+import { useCounterStore } from "@/stores/counter";
 
+const storeCounter = useCounterStore();
 export default {
   props: {
     image: { type: String, required: true },
