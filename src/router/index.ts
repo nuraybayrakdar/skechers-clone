@@ -13,7 +13,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      patch: "/",
+      path: "/",
       redirect: "/home",
     },
     {
