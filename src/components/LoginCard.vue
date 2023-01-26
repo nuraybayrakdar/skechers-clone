@@ -102,6 +102,12 @@ const validateForm = () => {
     >
       Login
     </button>
+    <router-link
+      to="/register"
+      class="text-primary mr-2 hover:text-[#FF9000] transition ease-in-out"
+    >
+      Register
+    </router-link>
   </form>
 </template>
 

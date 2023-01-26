@@ -7,8 +7,8 @@
     "playwright.config.*"
   ],
   "compilerOptions": {
-    "allowJs": true,
     "composite": true,
-    "types": ["node"]
+    "types": ["node"],
+    "allowJs": true
   }
 }

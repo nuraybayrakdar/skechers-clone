@@ -33,6 +33,7 @@ import { onMounted } from "vue";
 import { computed } from "vue";
 import { ref } from "vue";
 import { isProxy, toRaw } from "vue";
+import { RouterLink } from "vue-router";
 
 export default {
   props: {

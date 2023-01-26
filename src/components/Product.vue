@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useCounterStore } from "@/stores/counter";
+
 const props = defineProps({
   image: { type: String, required: true },
   name: { type: String, required: true },
@@ -95,7 +97,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
+  flex-start: start;
   margin-top: 32px;
 }
 
